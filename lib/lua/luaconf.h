@@ -83,7 +83,11 @@
 
 // BEGIN WAX PATCH
 #ifndef WAX_SCRIPTS_DIR
-#define WAX_SCRIPTS_DIR "scripts"
+#ifdef __arm64__
+    #define WAX_SCRIPTS_DIR "scripts-64"
+#else
+    #define WAX_SCRIPTS_DIR "scripts-32"
+#endif
 #endif
 
 #define LUA_PATH_DEFAULT WAX_SCRIPTS_DIR "/?.lua;" WAX_SCRIPTS_DIR "/?/init.lua;" WAX_SCRIPTS_DIR "/?.dat;"\

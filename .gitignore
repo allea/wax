@@ -9,3 +9,5 @@ xcuserdata
 *.xccheckout
 Pods/
 *.xcworkspace
+examples/*
+tools/Framework/DerivedData/*
