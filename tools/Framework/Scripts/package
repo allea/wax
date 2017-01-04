@@ -59,6 +59,7 @@ lipo -create \
 echo "Framework: Copying assets into current version..."
 
 cp wax/lib/*.h $FRAMEWORK_DIR/Headers/
+cp wax/lib/adaptation/*.h $FRAMEWORK_DIR/Headers/
 cp wax/lib/lua/lua.h $FRAMEWORK_DIR/Headers/
 cp wax/lib/lua/luaconf.h $FRAMEWORK_DIR/Headers/
 cp wax/lib/lua/lualib.h $FRAMEWORK_DIR/Headers/
