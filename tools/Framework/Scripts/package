@@ -58,7 +58,7 @@ lipo -create \
 # header files and the plist file
 echo "Framework: Copying assets into current version..."
 
-cp wax/lib/wax.h $FRAMEWORK_DIR/Headers/
+cp wax/lib/*.h $FRAMEWORK_DIR/Headers/
 cp wax/lib/lua/lua.h $FRAMEWORK_DIR/Headers/
 cp wax/lib/lua/luaconf.h $FRAMEWORK_DIR/Headers/
 cp wax/lib/lua/lualib.h $FRAMEWORK_DIR/Headers/
